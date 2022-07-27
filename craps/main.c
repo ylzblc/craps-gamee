@@ -1,9 +1,9 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include <time.h> // rand kullanabilmek icin
+#include <stdlib.h> // rand kullanabilmek icin
+#include <time.h> 
 
-int a; // 1. zar ataması
-int b; // 2. zar ataması
+int a; // 1. zar atamasÄ±
+int b; // 2. zar atamasÄ±
 char x; //bitis komutu icin
 int main(void)
 {
@@ -11,8 +11,8 @@ int main(void)
     printf("\t\tZAR OYUNUNA HOSGELDINIZ!\t\t\n\n"); //giris
     printf("   1. ATIS\n");
     printf("-------------\n");
-    srand(time(NULL)); //1 ve 6 arasi random sayi gelmesi icin(srand her calıstırdıgımızda farkli sayi gelmesi icin )
-    a = 1 + rand() %6;  //0 dan başlamaması için +1 ekliyoruz.
+    srand(time(NULL)); //1 ve 6 arasi random sayi gelmesi icin(srand her calÄ±stÄ±rdÄ±gÄ±mÄ±zda farkli sayi gelmesi icin )
+    a = 1 + rand() %6;  //0 dan baÅŸlamamasÄ± iÃ§in +1 ekliyoruz.
     b = 1 + rand() %6;
     printf("1. Zar: %d\n", a);  // zar degerlerini ekranda gostermek icin
     printf("2. Zar: %d\n", b);
@@ -24,7 +24,7 @@ int main(void)
 
     else if(toplam_ilk == 2 || toplam_ilk == 3 || toplam_ilk == 12) // eger 2, 3 ya da 12 gelirse kaybeder.
         printf("KAYBETTIN!");
-    else                                // eger farkli sayı gelirse puan olarak yazilir ve 2. atisa gecilir.
+    else                                // eger farkli sayÄ± gelirse puan olarak yazilir ve 2. atisa gecilir.
     {
         printf("   2. ATISLAR\t\n");
         printf("---------------\n");
@@ -45,7 +45,7 @@ int main(void)
             }else
             {
                 while(toplam_son != 7 || toplam_son != toplam_ilk) //7 veya puan denk gelmedigi takdirde atislar devam eder.
-                {                                                  //atisları bir donguye sokuyoruz.
+                {                                                  //atislarÄ± bir donguye sokuyoruz.
                     a = 1 + rand() %6; //zarlarin atilmaya devam etmesi gerekir.
                     b = 1 + rand() %6;
                     int toplam_son = a + b;
